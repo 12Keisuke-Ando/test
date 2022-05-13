@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>D.Iブログ</title>
+        <link rel="stylesheet" type="text/css" href="Jqcss.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    auto: true,
+                    mode: 'horizontal',
+                    speed: 2000,
+                    slideWidth: 1000,
+                });
+            });
+        </script>
+        
+    </head>
+<body>
+    <header>
+        <div class="logo"><img src="diblog_logo.jpg" ></div>
+        <ul>
+            <li>トップ</li>
+            <li>プロフィール</li>
+            <li>D.I.ブログについて</li>
+            <li>登録フォーム</li>
+            <li>問い合わせ</li>
+            <li>その他</li>
+        </ul>
+    </header>
+
+    <main>
+    <div class="main-container">
+        <div class="left">
+            <div class="slider">
+                <div><img src="jQuery_image1.jpg"></div>
+                <div><img src="jQuery_image2.jpg"></div>
+                <div><img src="jQuery_image3.jpg"></div>
+                <div><img src="jQuery_image4.jpg"></div>
+                <div><img src="jQuery_image5.jpg"></div>
+            </div>
+            <table>
+                <tr>
+                    <td><img src="pic1.jpg" width="200px"></td>
+                    <td><img src="pic2.jpg" width="200px"></td>
+                    <td><img src="pic3.jpg" width="200px"></td>
+                    <td><img src="pic4.jpg" width="200px"></td>
+                </tr>
+                <tr>
+                    <td class="bottom">ドメイン取得方法</td>
+                    <td class="bottom">快適な職場環境</td>
+                    <td class="bottom">Linuxの基礎</td>
+                    <td class="bottom">マーケティング入門</td>
+                </tr>
+                <tr>
+                    <td><img src="pic5.jpg" width="200px"</td>
+                    <td><img src="pic6.jpg" width="200px"></td>
+                    <td><img src="pic7.jpg" width="200px"></td>
+                    <td><img src="pic8.jpg" width="200px"></td>
+                </tr>
+                <tr>
+                    <td>アクティブラーニング</td>
+                    <td>CSSの効率的な勉強方法</td>
+                    <td>リーダブルコードとは</td>
+                    <td>HTML5の可能性</td>
+                </tr>
+            </table>
+        </div>
+
+        
+        <div class="right">
+            <h2>人気の記事</h2>
+            <p>PHPおススメ本</p>
+            <P>PHP MyAdminの使い方</P>
+            <p>いま人気のエディタTops</p>
+            <p>HTMLの基礎</p>
+            <h2>オススメリンク</h2>
+            <p>ディーアイワークス株式会社</p>
+            <p>XAMPPのダウンロード</p>
+            <p>Eclipseのダウンロード</p>
+            <p>Braketsのダウンロード</p>
+            <h2>カテゴリ</h2>
+            <p>HTML</p>
+            <p>PHP</p>
+            <p>MySQL</p>
+            <p>JavaScript</p>
+        </div>
+    </div>
+
+    </main>
+
+    <footer>
+        Copyright D.I.workd D.I.blog is the one which provice A to Z about programming
+    </footer>
+</body>
+</html>

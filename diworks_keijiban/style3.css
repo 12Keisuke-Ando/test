@@ -1,0 +1,130 @@
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: 60px;
+}
+
+header ul{
+    float: left;
+    background-color: black;
+    width: 100%;
+    line-height: 40px;
+}
+
+header ul li{
+    float: left;
+    list-style: none;
+    color: whitesmoke;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+main{
+    clear: both;
+    left: 0;
+}
+
+.main-container{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.left{
+    float: left;
+    width: 70%;
+    height: auto;
+}
+
+h1{
+    border-left: 5px solid black;
+    border-bottom: 2px solid black;
+    padding-left: 10px;
+}
+
+form{
+    margin: 0 auto;
+    background-color: #fbfbfb;
+    border: 3px solid #ebebeb;
+}
+
+form h3{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-left: 4px solid red;
+    padding-top: 5px;
+    padding-left: 15px;
+    width: 100%;
+    font-size: 20px;
+}
+
+form div{
+    padding: 15px;
+}
+
+.text, textarea{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    color: #999;
+    background: #fff;
+}
+
+.submit{
+    border: 1px solid lightgray;
+    padding: 4px 10px;
+    color: white;
+    background-color: #bfbfbf;
+    border-radius: 5px;
+    border-bottom: 2px solid gray;
+}
+
+h4{
+    border-bottom: 2px solid #bfbfbf;
+    margin-right: 20px;
+}
+
+.kiji{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: #fbfbfb;
+    border: 3px solid #ebebeb;
+}
+
+.right{
+    float: right;
+    width: 30%;
+}
+
+h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-bottom: 2px solid gray;
+}
+
+p{
+    line-height: 0%;
+    margin-left: 20px;
+}
+
+footer{
+    clear: left;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 60px;
+}
