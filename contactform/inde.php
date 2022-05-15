@@ -13,20 +13,20 @@
     <form method="post" action="mail_confirm.php">
         <div>
             <label>名前</label><br>
-            <input type="text" class="text" size="35" name="name" value="<?php echo $name_value; ?>">
+            <input type="text" class="text" size="35" name="name" value="<?php if( !empty($_POST['name'])) { echo $_POST['name']; } ?>">
         </div>
     
         <div>
             <label>メールアドレス</label>
             <br>
-            <input type="text" class="text" size="35" name="mail" value="<?php echo $mail_value; ?>">
+            <input type="text" class="text" size="35" name="mail"  value="<?php if( !empty($_POST['mail'])) { echo $_POST['mail']; } ?>">
         </div>
             
         <div>
             <label>年齢</label>
             <br>
             <select class="dropdown" name="age" value="<?php echo $age_value; ?>">
-                <option><?php echo $age_value; ?>歳</option>
+                <option><?php if( !empty($_POST['age'])) { echo $_POST['age']; } ?>歳</option>
                 <script>
                     for (var i =18; i <= 65; i++) {
                         document.write("<option value=" + i + ">"+ i +"歳</option>");
@@ -38,7 +38,7 @@
         <div>
             <label>コメント</label>
             <br>
-                <textarea cols="35" rows="7" name="comments"><?php echo $comments_value; ?></textarea>
+                <textarea cols="35" rows="7" name="comments"><?php if( !empty($_POST['name'])) { echo $_POST['name']; } ?></textarea>
         </div>
         
         <div>
