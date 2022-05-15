@@ -1,27 +1,3 @@
-<?php
-if ($_SERVER['RECEST_METHOD' === 'POST']) {
-  if (isset($_POST['text'])) {
-      $isset_status = 'POSTED, isset() True';
-      $name_value = $_POST['name'];
-      $mail_value = $_POST['mail'];
-      $age_value = $_POST['age'];
-      $comments_value = $_POST['comments'];
-  } else {
-    $isset_status = 'POSTED, isset() False';
-    $name_value = '';
-    $mail_value = '';
-    $age_value = '';
-    $comments_value = '';
-  }
-} else {
-    $isset_status = 'started without POST';
-    $name_value = '';
-    $mail_value = '';
-    $age_value = '';
-    $comments_value = '';
-}
-?>
-
 <!doctype HTML>
 <html lang="ja">
 
@@ -50,7 +26,7 @@ if ($_SERVER['RECEST_METHOD' === 'POST']) {
             <label>年齢</label>
             <br>
             <select class="dropdown" name="age" value="<?php echo $age_value; ?>">
-                <option>選択してください</option>
+                <option><?php echo $age_value; ?>歳</option>
                 <script>
                     for (var i =18; i <= 65; i++) {
                         document.write("<option value=" + i + ">"+ i +"歳</option>");
@@ -62,7 +38,7 @@ if ($_SERVER['RECEST_METHOD' === 'POST']) {
         <div>
             <label>コメント</label>
             <br>
-                <textarea cols="35" rows="7" name="comments">value="<?php echo $comments_value; ?>"</textarea>
+                <textarea cols="35" rows="7" name="comments"><?php echo $comments_value; ?></textarea>
         </div>
         
         <div>
